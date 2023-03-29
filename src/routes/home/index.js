@@ -6,6 +6,7 @@ import Catcher from "../../components/catcher";
 import CatcherWithHook from "../../components/catcherWithHook";
 import CrashIfClicked from "../../components/crashIfClicked";
 import CrashAfterAWhile from "../../components/crashAfterAWhile";
+import AppSignalCatcher from "../../components/appSignalCatcher";
 
 const Home = () => {
   return (
@@ -26,6 +27,11 @@ const Home = () => {
 
         <hr />
         <CrashAfterAWhile />
+
+        <hr />
+        <AppSignalCatcher>
+          <CrashableComponent />
+        </AppSignalCatcher>
 
         <hr />
       </div>
